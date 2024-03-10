@@ -14,12 +14,23 @@ body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
-    min-height: var(--line-height-base);
+    line-height: var(--line-height-base);
 }
 
-a {
+a:link{
     color: var(--text-color);
     text-decoration: none;
+}
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -29,7 +40,7 @@ a {
     color: var(--color-primary);
 }
 
-section {
+.section {
     padding: var(--section-padding);
 
 }
@@ -112,6 +123,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-footer {
+.footer {
     padding: var(--footer-padding);
 }
